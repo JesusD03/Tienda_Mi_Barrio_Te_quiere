@@ -91,6 +91,7 @@ class TiendaTest {
 			System.out.println("No cumple con el Pico y Cedula, por lo que no puede entrar a la tienda\n");
 			fail();
 		}
+		assertEquals(true, tienda.getCustomers().isEmpty());
 	}
 	
 	@Test
@@ -118,6 +119,7 @@ class TiendaTest {
 				
 			}
 		}
+		assertEquals(true, tienda.getCustomers().isEmpty());
 	}
 
 }
