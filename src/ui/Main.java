@@ -10,8 +10,8 @@ import model.Tienda;
 
 public class Main {
 	
-	public static int count = 0;
-	static int option = 0;
+	
+	public static int option = 0;
 	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	public static Tienda tienda;
 	
@@ -48,7 +48,6 @@ public class Main {
 	public static void chosenOoption(int op) {
 		switch (op) {
 		case 1:
-			count++;
 			addNewCustomer();
 			break;
 		
@@ -111,7 +110,7 @@ public class Main {
 	
 	private static void attemptsToEnter() {
 		
-		System.out.println("La cantidad de personas que han intentado ingresar son: "+count+"\n");
+		System.out.println("La cantidad de personas que han intentado ingresar son: "+tienda.getCount()+"\n");
 		
 	}
 	
